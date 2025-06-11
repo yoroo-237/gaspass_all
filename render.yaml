@@ -6,7 +6,7 @@ staticSites:
     buildCommand: |
       npm ci
       npm run build
-    publishPath: build          # ou "dist" si Vite
+    publishPath: dist          # ou "build" si !Vite
     routes:
       - type: rewrite
         source: /*

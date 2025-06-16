@@ -1,11 +1,11 @@
 staticSites:
-  - name: gaspass-frontend
-    rootDir: client
+  - name: gaspass_all
+    rootDir: client          # Render exécute les commandes DANS client/
     env: node
     buildCommand: |
       npm ci
-      npm run build       
-    publishPath: dist  
+      npm run build         # generate:data + vite build (ou react-scripts build)
+    publishPath: dist       # dossier final généré DANS client/
     routes:
       - type: rewrite
         source: /*

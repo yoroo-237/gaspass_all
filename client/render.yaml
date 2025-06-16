@@ -1,13 +1,11 @@
-# render.yaml
 staticSites:
   - name: gaspass-frontend
-    # on lui dit de lancer les commandes DANS client/
-    rootDir: client
+    rootDir: .                 # la racine du dépôt
     env: node
     buildCommand: |
       npm ci
-      npm run build
-    publishPath: build
+      npm run build            # generate:data + vite build
+    publishPath: dist          # dossier de sortie Vite
     routes:
       - type: rewrite
         source: /*

@@ -1,6 +1,6 @@
 staticSites:
   - name: gaspass-frontend
-    rootDir: .                 # la racine du dépôt
+    rootDir: client            # la racine du dépôt
     env: node
     buildCommand: |
       npm ci

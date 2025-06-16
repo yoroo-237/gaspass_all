@@ -8,7 +8,7 @@
     "build": "npm run generate:data && react-scripts build",
     "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

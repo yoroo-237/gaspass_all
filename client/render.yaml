@@ -1,12 +1,13 @@
 # render.yaml
 staticSites:
-  - name: ecommerce-frontend
+  - name: gaspass-frontend
+    # on lui dit de lancer les commandes DANS client/
+    rootDir: client
     env: node
-    # npm run build lancera d’abord generate:data puis react-scripts build
     buildCommand: |
       npm ci
       npm run build
-    publishPath: build          # ou "dist" si Vite
+    publishPath: build
     routes:
       - type: rewrite
         source: /*

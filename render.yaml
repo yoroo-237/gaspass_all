@@ -1,11 +1,11 @@
 staticSites:
   - name: gaspass-frontend
-    rootDir: client            # la racine du dépôt
+    rootDir: client
     env: node
     buildCommand: |
       npm ci
-      npm run build            # generate:data + vite build
-    publishPath: dist          # dossier de sortie Vite
+      npm run build       
+    publishPath: dist  
     routes:
       - type: rewrite
         source: /*
